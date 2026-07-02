@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0d0d">
+<meta name="color-scheme" content="dark light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<title>Grife Nacional | Moda Feminina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#topo" class="nav-logo" aria-label="Grife Nacional - topo">
+      <span class="logo-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="logo-text">GRIFE<em>NACIONAL</em></span>
+    </a>
+    <nav class="nav-links">
+      <button type="button" class="nav-link" data-target="#sobre">Sobre</button>
+      <button type="button" class="nav-link" data-target="#produtos">Produtos</button>
+      <button type="button" class="nav-link" data-target="#contato">Contato</button>
+    </nav>
+    <button type="button" class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-links nav-links--mobile" id="navLinksMobile">
+    <button type="button" class="nav-link" data-target="#sobre">Sobre</button>
+    <button type="button" class="nav-link" data-target="#produtos">Produtos</button>
+    <button type="button" class="nav-link" data-target="#contato">Contato</button>
+  </nav>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="hero-stripes" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">MODA FEMININA · EDIÇÃO NACIONAL</p>
+      <h1 class="hero-title">GRIFE<br><em>NACIONAL</em></h1>
+      <p class="hero-sub">Moda feminina para quem busca estilo, qualidade e personalidade.</p>
+      <button type="button" class="btn-primary" data-target="#produtos">Ver coleção</button>
+    </div>
+    <button type="button" class="scroll-cue" data-target="#sobre" aria-label="Rolar para Sobre">
+      <span></span>
+    </button>
+  </section>
+
+  <section class="section section--dark" id="sobre">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--light">01 · A MARCA</p>
+      <h2 class="section-title">Sobre a Grife Nacional</h2>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <p>
+          A Grife Nacional...
+        </p>
+        <p>
+          Texto adicional sobre a marca
+        </p>
+        <div class="sobre-stats">
+          <div><strong>+09</strong><span>lojas físicas</span></div>
+        </div>
+      </div>
+      <div class="sobre-visual" aria-hidden="true">
+        <div class="sobre-frame">
+          <img src="img.jpg" alt="Imagem da marca" onerror="this.style.display='none'; this.parentElement.classList.add('sobre-frame--empty')" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="produtos">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--light">02 · COLEÇÃO</p>
+      <h2 class="section-title">Produtos</h2>
+      <p class="section-desc section-desc--light">Clique em uma peça para ver os detalhes.</p>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section class="section section--light" id="contato">
+    <div class="section-head">
+      <p class="eyebrow">03 · FALE COM A GENTE</p>
+      <h2 class="section-title">Contato</h2>
+    </div>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="https://instagram.com/grifenacional_" target="_blank" rel="noopener">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        </span>
+        <span class="contact-body">
+          <strong>Instagram</strong>
+          <span>@grifenacional_</span>
+        </span>
+        <span class="contact-arrow" aria-hidden="true">&#8594;</span>
+      </a>
+
+      <a class="contact-card" href="https://wa.me/5512345678" target="_blank" rel="noopener">
+        <span class="contact-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.4A9.4 9.4 0 1 0 12 2.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M8.3 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.7.8 1.8.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.1.6.2.4 1 1.3 2 2 .3.2.5.2.7 0 .2-.2.6-.7.8-.9.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.9.2.1.4.2.4.3 0 .5-.2 1-.5 1.4-.3.3-1 .6-1.6.6-1.4 0-3-.7-4.6-2.2-1.6-1.6-2.4-3.2-2.4-4.6 0-.6.2-1.2.6-1.6Z" fill="currentColor"/></svg>
+        </span>
+        <span class="contact-body">
+          <strong>WhatsApp</strong>
+          <span>Fale com a loja — número 55912345678</span>
+        </span>
+        <span class="contact-arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="logo-mark logo-mark--sm" aria-hidden="true"><span></span><span></span><span></span></span>
+    <p>Grife Nacional — Moda Feminina.</p>
+  </footer>
+
+</main>
+
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <div class="product-modal-backdrop" id="modalBackdrop"></div>
+  <div class="product-modal-box" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+    <button type="button" class="product-modal-close" id="modalClose" aria-label="Fechar">&#10005;</button>
+    <div class="product-modal-img">
+      <img id="modalImg" src="" alt="">
+    </div>
+    <div class="product-modal-info">
+      <p class="eyebrow" id="modalCategory">CATEGORIA</p>
+      <h3 id="modalProductName">Nome do produto</h3>
+      <div class="modal-field">
+        <span>Tamanho</span>
+        <strong id="modalSize">—</strong>
+      </div>
+      <div class="modal-field">
+        <span>Valor</span>
+        <strong id="modalPrice">R$ 0,00</strong>
+      </div>
+      <a class="modal-buy-btn" id="modalBuyBtn" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.5 21.5l4.9-1.4A9.4 9.4 0 1 0 12 2.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M8.3 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.7.8 1.8.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.3.3-.1.6.2.4 1 1.3 2 2 .3.2.5.2.7 0 .2-.2.6-.7.8-.9.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.9.2.1.4.2.4.3 0 .5-.2 1-.5 1.4-.3.3-1 .6-1.6.6-1.4 0-3-.7-4.6-2.2-1.6-1.6-2.4-3.2-2.4-4.6 0-.6.2-1.2.6-1.6Z" fill="currentColor"/></svg>
+        Comprar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
